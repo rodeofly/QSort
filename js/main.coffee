@@ -1,19 +1,26 @@
-i18n =
+I18N =
   "app":
     "fr":
       "explication" : "Le but de ce questionnaire n’est pas de rechercher une bonne réponse mais de vous permettre d’identifier votre attitude ainsi que des autres camarades et m’aider à mieux vous connaître et m’adapter à votre situation. Parmi les 20 phrases, je choisis :"
       "Les 2 plus" : "Les 2 qui me correspondent le plus"
       "Les 4 peu"     : "Les 4 qui me correspondent peu"
-      "Les 8 pas d’opinion" : "Les 8 pour lesquelles je n’ai pas d’opinion"
+      "Les 8 sans opinion" : "Les 8 pour lesquelles je n’ai pas d’opinion"
       "Les 4 pas trop"    : "Les 4 qui me correspondent pas trop"
       "les 2 pas du tout" : "Les 2 qui me correspondent pas du tout"
     "re":
       "explication" : "té lé difficil pou espliké !"
       "Les 2 plus" : "bann 2 le plus"
       "Les 4 peu"     : "bann 4 inn bout"
-      "Les 8 pas d’opinion" : "bann 8 pa la ek sa !"
+      "Les 8 sans opinion" : "bann 8 pa la ek sa !"
       "Les 4 pas trop"    : "bann 4 pa trotro"
       "les 2 pas du tout" : "bann 2 pa di tou"
+    "uk":
+      "explication" : "The purpose of this questionnaire is not to find a good answer but to help you identify your attitude as well as other friends and help me get to know you and adapt to your situation. Among the 20 sentences, I choose "
+      "Les 2 plus" : "The 2 that correspond the most to me"
+      "Les 4 peu"     : "The 4 corresponding a bit to me"
+      "Les 8 sans opinion" : "The 8 whom I do not have an opinion"
+      "Les 4 pas trop"    : "The 4 who do not fit me too"
+      "les 2 pas du tout" : "The 2 that do not correspond to me at all"
   "qsort":
     "fr":
       1: "J’aime les mathématiques parce que j’ai des bons résultats"
@@ -57,10 +64,32 @@ i18n =
       18: "Je saisis mieux les choses que je ne comprenais pas"
       19: "Les tâches complexes c’est super."
       20: "En mathématiques, j’apprends à m’exprimer"
+    "uk":
+      1: "I like math because I have good results"
+      2: "Mathematics for understanding the world around us"
+      3: "This is too difficult matter"
+      4: "Success in Mathematics provides access to good classes and good ways of studies"
+      5: "The activities carried out in mathematics learn to think"
+      6: "The mathematics are useless in real life"
+      7: "The activities do not motivate us"
+      8: "Mathematics is learned from books, internet, ..."
+      9: "The mathematical interest me for the occupation I want to do"
+      10: "In mathematics, there are too many concepts to learn"
+      11: "What I learn in mathematics is exciting"
+      12: "I like to learn math"
+      13: "Mathematics is useful in everyday life"
+      14: "I have too many hours of mathematics in my schedule"
+      15: "I do not like math because it's difficult"
+      16: "I like what we did during the course of mathematics"
+      17: "The mathematics do not seem to help you after your studies"
+      18: "I take the best things I did not understand"
+      19: "Complex tasks that's great."
+      20: "In mathematics, I learn to speak"
 
-ids = [1911008042, 2060227356, 1552551457, 441796097, 1823859130, 1887310124, 377892327, 945229228, 1764134384, 1665452858, 1259290828, 779376026, 745731751,  2062809803, 1795814391, 2034551388, 1435048531, 1393637327, 1101470727, 1529373593]
 
-url = ""
+IDS = [1911008042, 2060227356, 1552551457, 441796097, 1823859130, 1887310124, 377892327, 945229228, 1764134384, 1665452858, 1259290828, 779376026, 745731751,  2062809803, 1795814391, 2034551388, 1435048531, 1393637327, 1101470727, 1529373593]
+
+URL = "https://docs.google.com/forms/d/e/1FAIpQLSf0xvezN2rUrUsRtQI70ONyByXffIW-KzXHjp12fZFmhnvc2Q/viewform?"
 
 update_count = ->
   $( ".connectedSortable" ).each ->
@@ -68,20 +97,20 @@ update_count = ->
 
   if $( "#container li" ).length is 20
     i = 0
-    url = "https://docs.google.com/forms/d/e/1FAIpQLSf0xvezN2rUrUsRtQI70ONyByXffIW-KzXHjp12fZFmhnvc2Q/viewform?"
-    $( "#2 li" ).each  -> url+="entry.#{ids[i++]}=#{$( this ).attr( 'data-item' )}&"
-    $( "#1 li" ).each  -> url+="entry.#{ids[i++]}=#{$( this ).attr( 'data-item' )}&"
-    $( "#0 li" ).each  -> url+="entry.#{ids[i++]}=#{$( this ).attr( 'data-item' )}&"
-    $( "#-1 li" ).each -> url+="entry.#{ids[i++]}=#{$( this ).attr( 'data-item' )}&"
-    $( "#-2 li" ).each -> url+="entry.#{ids[i++]}=#{$( this ).attr( 'data-item' )}&"
+    url = URL
+    $( "#2 li" ).each  -> url+="entry.#{IDS[i++]}=#{$( this ).attr( 'data-item' )}&"
+    $( "#1 li" ).each  -> url+="entry.#{IDS[i++]}=#{$( this ).attr( 'data-item' )}&"
+    $( "#0 li" ).each  -> url+="entry.#{IDS[i++]}=#{$( this ).attr( 'data-item' )}&"
+    $( "#-1 li" ).each -> url+="entry.#{IDS[i++]}=#{$( this ).attr( 'data-item' )}&"
+    $( "#-2 li" ).each -> url+="entry.#{IDS[i++]}=#{$( this ).attr( 'data-item' )}&"
     $( "#origin" ).before "<button id='go'>Go</button>"
   else $( "#go" ).remove()
 
 $ ->
   set_language = (lang) ->
     $( "#container, #origin" ).empty()
-    qsort = i18n["qsort"][lang]
-    app = i18n["app"][lang]
+    qsort = I18N["qsort"][lang]
+    app = I18N["app"][lang]
     
     $( ".explanation" )
       .html app["explication"]
@@ -92,7 +121,7 @@ $ ->
    
     c = [-2, -1, 0, 1, 2]
     n = [2, 4, 8, 4, 2 ] 
-    t = [app["Les 2 plus"], app["Les 4 peu"], app["Les 8 pas d’opinion"], app["Les 4 pas trop"], app["les 2 pas du tout"]]   
+    t = [app["Les 2 plus"], app["Les 4 peu"], app["Les 8 sans opinion"], app["Les 4 pas trop"], app["les 2 pas du tout"]]   
     for i in [0..4]
       html = "<p class='caption'>#{t[i]} (<span class='count'>0</span>/#{n[i]})</p><ul id='#{c[i]}' class='connectedSortable destination' data-coeff='#{c[i]}' data-max='#{n[i]}'></ul>"
       $( "#container" ).append html
