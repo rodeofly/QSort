@@ -5,7 +5,7 @@
   I18N = {
     "app": {
       "fr": {
-        "explication": "Le but de ce questionnaire n’est pas de rechercher une bonne réponse mais de vous permettre d’identifier votre attitude ainsi que des autres camarades et m’aider à mieux vous connaître et m’adapter à votre situation. Parmi les 20 phrases, je choisis :",
+        "explication": "Le but de ce questionnaire n’est pas de rechercher une bonne réponse mais de vous permettre d’identifier votre attitude ainsi que des autres camarades et m’aider à mieux vous connaître et m’adapter à votre situation. Faites glisser les différentes phrases dans les cases correspondantes.",
         "Les 2 plus": "Les 2 qui me correspondent le plus",
         "Les 4 peu": "Les 4 qui me correspondent peu",
         "Les 8 sans opinion": "Les 8 pour lesquelles je n’ai pas d’opinion",
@@ -21,7 +21,7 @@
         "les 2 pas du tout": "bann 2 pa di tou"
       },
       "uk": {
-        "explication": "The purpose of this questionnaire is not to find a good answer but to help you identify your attitude as well as other friends and help me get to know you and adapt to your situation. Among the 20 sentences, I choose ",
+        "explication": "The purpose of this questionnaire is not to find a good answer but to help you identify your attitude as well as other friends and help me get to know you and adapt to your situation. Drag the sentences in the corresponding frames.",
         "Les 2 plus": "The 2 that correspond the most to me",
         "Les 4 peu": "The 4 corresponding a bit to me",
         "Les 8 sans opinion": "The 8 whom I do not have an opinion",
@@ -58,7 +58,7 @@
         3: "Mi reconné k’lé trop dur",
         4: "Mi reconné que gagné dann matiere la va permette a moins d’aller loin",
         5: "Cet ou fé dann math y oblige a ou cass out tête",
-        6: "math y serve pa rien  dan la vie",
+        6: "Math y serve pa rien  dan la vie",
         7: "Lo travail y demande lé pas gadiam",
         8: "Néna in bonpeu maniere pou apprenn math",
         9: "Pou le travail mi veu fé math y intéresse a moin",
