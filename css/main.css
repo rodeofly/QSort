@@ -153,6 +153,10 @@ nav a:hover {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+.question {
+  width : 50px;
+}
+
 .explanation {
   display : block;
   width : 45%;
@@ -171,7 +175,7 @@ p.caption {
   height   : 450px;
 }
 
-#origin, #destination {
+#origin, #container {
   position   : absolute;
   width      : 49%;
   min-height : 50px;
@@ -211,11 +215,12 @@ li, .pholder {
 }
 
 #origin {
-  width : 49%;
-  bottom: 25px;
-  right : 0;
   position:  fixed;
+  width : 49%;
   min-height : 450px;
+  top: 50%;
+  left: 50%;
+  transform: translate(0%, -50%);
 }
 
 

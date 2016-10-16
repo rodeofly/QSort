@@ -1,4 +1,4 @@
-qsort =
+qsort_fr =
   1: "J’aime les mathématiques parce que j’ai des bons résultats"
   2: "Les mathématiques permettent de comprendre le monde qui nous entoure"
   3: "C’est une matière trop difficile"
@@ -28,8 +28,7 @@ update_count = ->
   $( ".connectedSortable" ).each ->
     $( this ).prevAll( "p.caption:first" ).find( ".count").html $( this ).children().length
 
-
-  if $( "#destination li" ).length is 20
+  if $( "#container li" ).length is 20
     i = 0
     url = "https://docs.google.com/forms/d/e/1FAIpQLSf0xvezN2rUrUsRtQI70ONyByXffIW-KzXHjp12fZFmhnvc2Q/viewform?"
     $( "#2 li" ).each  -> url+="entry.#{ids[i++]}=#{$( this ).attr( 'data-item' )}&"
@@ -41,39 +40,35 @@ update_count = ->
   else $( "#go" ).remove()
 
 $ ->
+  qsort = qsort_fr
+  $( ".explanation" ).dialog()
+  for i in [1..20]
+    $( "#origin" ).append "<li class='ui-state-default' data-item='#{i}'>#{qsort[i]}</li>"
   
-  $( "#origin" ).append(  "<li class='ui-state-default' data-item='#{i}'>#{qsort[i]}</li>" ) for i in [1..20]
+  c = [-2, -1, 0, 1, 2]
+  n = [2, 4, 8, 4, 2 ] 
+  t = ["qui me correspondent le plus", "qui me correspondent peu", "pour lesquelles je n’ai pas d’opinion", "qui me correspondent pas trop", "qui me correspondent pas du tout"]   
+  for i in [0..4]
+    html = "<p class='caption'>Les #{n[i]} #{t[i]} (<span class='count'>0</span>/#{n[i]})</p><ul id='#{c[i]}' class='connectedSortable destination' data-coeff='#{c[i]}' data-max='#{n[i]}'></ul>"
+    $( "#container" ).append html
+    
   $( ".connectedSortable" )
     .sortable
       connectWith: ".connectedSortable"
-      placeholder: 'pholder'
+      placeholder: "pholder"
       dropOnEmpty: true
     .disableSelection()
-  
-  
+   
   $( "#origin" ).sortable
     receive: (event, ui) -> update_count()
-  
-  $( "#2, #-2" ).sortable
+    
+  $( ".destination" ).sortable
     receive: (event, ui) ->
-      if ($(this).children().length > 2)
-        alert "Attention 2 max ! Liberez en un avant !"
-        $(ui.sender).sortable('cancel')
-      update_count()
-
-  
-  $( "#1, #-1" ).sortable
-    receive: (event, ui) ->
-      if ($(this).children().length > 4)
-        alert "Attention 4 max ! Liberez en un avant !"
-        $(ui.sender).sortable('cancel')
-      update_count()
-  
-  $( "#0" ).sortable
-    receive: (event, ui) ->
-      if ($(this).children().length > 8)
-        alert "Attention 8 max ! Liberez en un avant !"
+      m = parseInt $(this).attr("data-max")
+      if ($(this).children().length > m )
+        alert "Attention #{m} max ! Liberez en un avant !"
         $(ui.sender).sortable('cancel')
       update_count()
   
   $( "body" ).on "click", "#go", -> window.location.href = url
+  $( "body" ).on "click", ".question", -> $( ".explanation" ).dialog("open")
