@@ -97,7 +97,7 @@ update_count = ->
   $( ".connectedSortable" ).each ->
     $( this ).prevAll( "p.caption:first" ).find( ".count").html $( this ).children().length
 
-  if $( "#container li" ).length is 2
+  if $( "#container li" ).length is 20
     i = 0
     url = URL
     $( "#2 li" ).each  -> url+="entry.#{IDS[i++]}=#{$( this ).attr( 'data-item' )}&"
