@@ -121,7 +121,7 @@ $ ->
     for i in [1..20]
       $( "#origin" ).append "<li class='ui-state-default' data-item='#{i}'>#{qsort[i]}</li>"
    
-    c = [-2, -1, 0, 1, 2]
+    c = [2, 1, 0, -1, -2]
     n = [2, 4, 8, 4, 2 ] 
     t = [app["Les 2 plus"], app["Les 4 peu"], app["Les 8 sans opinion"], app["Les 4 pas trop"], app["les 2 pas du tout"]]   
     for i in [0..4]
