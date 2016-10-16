@@ -110,7 +110,7 @@
     $(".connectedSortable").each(function() {
       return $(this).prevAll("p.caption:first").find(".count").html($(this).children().length);
     });
-    if ($("#container li").length === 2) {
+    if ($("#container li").length === 20) {
       i = 0;
       url = URL;
       $("#2 li").each(function() {
