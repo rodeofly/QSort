@@ -157,6 +157,10 @@ nav a:hover {
   width : 50px;
 }
 
+.i18n {
+  width : 50px;
+}
+
 .explanation {
   display : block;
   width : 45%;
