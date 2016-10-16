@@ -92,7 +92,7 @@ I18N =
 IDS = [1911008042, 2060227356, 1552551457, 441796097, 1823859130, 1887310124, 377892327, 945229228, 1764134384, 1665452858, 1259290828, 779376026, 745731751,  2062809803, 1795814391, 2034551388, 1435048531, 1393637327, 1101470727, 1529373593]
 
 URL = "https://docs.google.com/forms/d/e/1FAIpQLSf0xvezN2rUrUsRtQI70ONyByXffIW-KzXHjp12fZFmhnvc2Q/viewform?"
-
+url=""
 update_count = ->
   $( ".connectedSortable" ).each ->
     $( this ).prevAll( "p.caption:first" ).find( ".count").html $( this ).children().length
