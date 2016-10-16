@@ -207,7 +207,7 @@ li, .pholder {
   left : 0;
 }
 
-.connectedSortable{
+.destination{
   position   : relative;
   width      : 80%;
   min-height : 50px;
@@ -217,10 +217,12 @@ li, .pholder {
 #origin {
   position:  fixed;
   width : 49%;
-  min-height : 450px;
+  min-height : 75px;
   top: 50%;
   left: 50%;
   transform: translate(0%, -50%);
+  background : lightgrey;
+  border-radius : 5px;
 }
 
 
@@ -236,8 +238,8 @@ li, .pholder {
   border-radius : 5px;
   padding : 10px;
   position : fixed;
-  top : 50%;
-  right : 10%;
+  top : 55%;
+  left : 50%;
   z-index : 10;
 }
 
