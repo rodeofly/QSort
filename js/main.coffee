@@ -97,7 +97,7 @@ update_count = ->
   $( ".connectedSortable" ).each ->
     $( this ).prevAll( "p.caption:first" ).find( ".count").html $( this ).children().length
 
-  if $( "#container li" ).length is 20
+  if $( "#container li" ).length is 2
     i = 0
     url = URL
     $( "#2 li" ).each  -> url+="entry.#{IDS[i++]}=#{$( this ).attr( 'data-item' )}&"
@@ -105,7 +105,7 @@ update_count = ->
     $( "#0 li" ).each  -> url+="entry.#{IDS[i++]}=#{$( this ).attr( 'data-item' )}&"
     $( "#-1 li" ).each -> url+="entry.#{IDS[i++]}=#{$( this ).attr( 'data-item' )}&"
     $( "#-2 li" ).each -> url+="entry.#{IDS[i++]}=#{$( this ).attr( 'data-item' )}&"
-    $( "#origin" ).before "<button id='go'>Go</button>"
+    $( "#origin" ).before "<button id='go' data-url='#{url}'>Go</button>"
   else $( "#go" ).remove()
 
 $ ->
@@ -157,5 +157,6 @@ $ ->
   
   
   
-  $( "body" ).on "click", "#go", -> window.location.href = url
+  $( "body" ).on "click", "#go", -> 
+    window.location.href = url
   $( "body" ).on "click", ".question", -> $( ".explanation" ).dialog("open")
