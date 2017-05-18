@@ -1,14 +1,14 @@
 I18N =
   "app":
     "fr":
-      "explication" : "Le but de ce questionnaire n’est pas de rechercher une bonne réponse mais de vous permettre d’identifier votre attitude ainsi que des autres camarades et m’aider à mieux vous connaître et m’adapter à votre situation. Faites glisser les différentes phrases dans les cases correspondantes."
+      "explication" : "La mathématique est une discipline qui nécessite une motivation constante et permet une compréhension du monde qui nous entoure. Le but de ce questionnaire n’est pas de rechercher une bonne réponse mais de vous permettre d’identifier votre attitude et mener une réflexion sur votre rapport aux mathématiques et ainsi vous rendre plus efficace. C’est aussi un moyen pour aider l’équipe qui organise le Rallye 974 Maths à mieux vous connaître et à améliorer l’organisation des épreuves ainsi que la qualité des problèmes proposés. Parmi les 20 phrases, je choisis : faites glisser vos réponses de droite dans les cases de gauche."
       "Les 2 plus" : "Les 2 qui me correspondent le plus"
       "Les 4 peu"     : "Les 4 qui me correspondent peu"
       "Les 8 sans opinion" : "Les 8 pour lesquelles je n’ai pas d’opinion"
       "Les 4 pas trop"    : "Les 4 qui me correspondent pas trop"
       "les 2 pas du tout" : "Les 2 qui me correspondent pas du tout"
     "re":
-      "explication" : "té lé difficil pou espliké !"
+      "explication" : "mathématique ça un afair la besoin motivation et y fé compran à nou le mond.  isi la pa besoin trouv la bone réponse. Nou la besoin conet out manièr et pétet fé réfléchi aou sur out façon avec mathématiques et kom ça ou sera pli efikace. Ça y permé osi ban y organiz Rallye 974 Maths pou mié conet aou é amélioré la kalité ban problèm y propoz anou. Choisi parmi bann 20 phraz : y fo fair glisser man phraz à droite dans man kaz à gauche. Zot la bien compris !"
       "Les 2 plus" : "bann 2 le plus"
       "Les 4 peu"     : "bann 4 inn bout"
       "Les 8 sans opinion" : "bann 8 pa la ek sa !"
@@ -41,11 +41,11 @@ I18N =
       16: "J’aime ce que l’on fait pendant les cours de mathématiques"
       17: "Les mathématiques ne vous semblent pas utiles pour la suite de vos études"
       18: "Je saisis mieux les choses que je ne comprenais pas"
-      19: "Les tâches complexes c’est super."
+      19: "Les tâches complexes et les narrations de recherche c’est super"
       20: "En mathématiques, j’apprends à m’exprimer"
     "re":
-      1: "Mi aime mathématique parce que lo résultat lé la"
-      2: "Mathématique y permettent à moins de comprenn dann quel monde nou vive"
+      1: "Mi aim mathématique parce que lo résultat lé la"
+      2: "Mathématique y permette à moin de comprann dann quel moone nou vive"
       3: "Mi reconné k’lé trop dur"
       4: "Mi reconné que gagné dann matiere la va permette a moins d’aller loin"
       5: "Cet ou fé dann math y oblige a ou cass out tête"
@@ -62,18 +62,18 @@ I18N =
       16: "Mi aime cossa nou fé quand nous apprenn math"
       17: "Mi pense que math lé pas besoin pou cek mi veu fé apré"
       18: "Jordi mi comprenn mieux cek ma té y comprenn pa avant"
-      19: "Tâches complexes lé gadiam"
+      19: "Tâches complexes avec narration de recherche lé gadiam"
       20: "Avec math mi gaigne mieux cosé"
     "uk":
       1: "I like math because I have good results"
       2: "Mathematics for understanding the world around us"
       3: "This is too difficult matter"
       4: "Success in Mathematics provides access to good classes and good ways of studies"
-      5: "The activities carried out in mathematics learn to think"
+      5: "The activities carried out in mathematics learn how to think"
       6: "The mathematics are useless in real life"
       7: "The activities do not motivate us"
       8: "Mathematics is learned from books, internet, ..."
-      9: "The mathematical interest me for the occupation I want to do"
+      9: "The mathematics interest me for the occupation I want to do"
       10: "In mathematics, there are too many concepts to learn"
       11: "What I learn in mathematics is exciting"
       12: "I like to learn math"
@@ -83,8 +83,9 @@ I18N =
       16: "I like what we did during the course of mathematics"
       17: "The mathematics do not seem to help you after your studies"
       18: "I take the best things I did not understand"
-      19: "Complex tasks that's great."
+      19: "Complex tasks and Research narration that's great."
       20: "In mathematics, I learn to speak"
+
 
 
 
