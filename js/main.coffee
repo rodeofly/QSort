@@ -1,7 +1,7 @@
 I18N =
   "app":
     "fr":
-      "explication" : "La mathématique est une discipline qui nécessite une motivation constante et permet une compréhension du monde qui nous entoure. Le but de ce questionnaire n’est pas de rechercher une bonne réponse mais de vous permettre d’identifier votre attitude et mener une réflexion sur votre rapport aux mathématiques et ainsi vous rendre plus efficace. C’est aussi un moyen pour aider l’équipe qui organise le Rallye 974 Maths à mieux vous connaître et à améliorer l’organisation des épreuves ainsi que la qualité des problèmes proposés. Parmi les 20 phrases, je choisis : faites glisser vos réponses de droite dans les cases de gauche."
+      "explication" : "La mathématique est une discipline qui nécessite une motivation constante et permet une compréhension du monde qui nous entoure. Le but de ce questionnaire n’est pas de rechercher une bonne réponse mais de vous permettre d’identifier votre attitude et mener une réflexion sur votre rapport aux mathématiques et ainsi vous rendre plus efficace. C’est aussi un moyen pour aider l’équipe qui organise les ateliers des problèmes à ciel ouvert à mieux vous connaître et à améliorer la qualité des problèmes proposés. Parmi les 20 phrases, je choisis et je fais glisser les réponses de droite dans les cases de gauche."
       "Les 2 plus" : "Les 2 qui me correspondent le plus"
       "Les 4 peu"     : "Les 4 qui me correspondent peu"
       "Les 8 sans opinion" : "Les 8 pour lesquelles je n’ai pas d’opinion"
